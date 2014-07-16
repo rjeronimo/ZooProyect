@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="4c960cbe-3d55-4582-b5bf-11a5b56ed537" name="usuario@HP 2014-07-15 19:40:00" runUser="HP\usuario" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0fda92f3-4914-4cb8-8df3-31deca771d1f">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="usuario_HP 2014-07-15 19_40_00" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-07-15T19:40:00.3126501-05:00" queuing="2014-07-15T19:40:01.4827334-05:00" start="2014-07-15T19:40:01.6018101-05:00" finish="2014-07-15T19:41:27.8572566-05:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="HP" outcome="Error" timestamp="2014-07-15T19:41:27.8562552-05:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="obtenerInstitucionRUC" storage="r:\upc\distribuidos\proyecto\proyecto\zoologico\bin\debug\zoologico.dll" id="ac567664-e6ff-8d21-c441-265c97ab8296">
+      <Execution id="52a6a71c-599b-474f-8c40-a052877b6000" />
+      <TestMethod codeBase="R:/UPC/Distribuidos/Proyecto/Proyecto/Zoologico/bin/Debug/Zoologico.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Zoologico.UnitTest1, Zoologico, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="obtenerInstitucionRUC" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="ac567664-e6ff-8d21-c441-265c97ab8296" executionId="52a6a71c-599b-474f-8c40-a052877b6000" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="52a6a71c-599b-474f-8c40-a052877b6000" testId="ac567664-e6ff-8d21-c441-265c97ab8296" testName="obtenerInstitucionRUC" computerName="HP" duration="00:01:26.1584661" startTime="2014-07-15T19:40:01.6987905-05:00" endTime="2014-07-15T19:41:27.8572566-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="52a6a71c-599b-474f-8c40-a052877b6000">
+    </UnitTestResult>
+  </Results>
+</TestRun>

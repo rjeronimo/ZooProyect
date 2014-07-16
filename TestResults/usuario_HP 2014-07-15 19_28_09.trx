@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="e7f25111-22db-4a90-96e4-b02449e26741" name="usuario@HP 2014-07-15 19:28:09" runUser="HP\usuario" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0fda92f3-4914-4cb8-8df3-31deca771d1f">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="usuario_HP 2014-07-15 19_28_09" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-07-15T19:28:09.1792432-05:00" queuing="2014-07-15T19:28:09.1982547-05:00" start="2014-07-15T19:28:09.2022569-05:00" finish="2014-07-15T19:28:10.5964030-05:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="obtenerInstitucionRazon" storage="r:\upc\distribuidos\proyecto\proyecto\zoologico\bin\debug\zoologico.dll" id="1e890cb5-ac80-e9ad-05cf-c701e2ea8526">
+      <Execution id="f27e870b-6855-46c9-8e1f-51baf7c74db7" />
+      <TestMethod codeBase="R:/UPC/Distribuidos/Proyecto/Proyecto/Zoologico/bin/Debug/Zoologico.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Zoologico.UnitTest1, Zoologico, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="obtenerInstitucionRazon" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="1e890cb5-ac80-e9ad-05cf-c701e2ea8526" executionId="f27e870b-6855-46c9-8e1f-51baf7c74db7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="f27e870b-6855-46c9-8e1f-51baf7c74db7" testId="1e890cb5-ac80-e9ad-05cf-c701e2ea8526" testName="obtenerInstitucionRazon" computerName="HP" duration="00:00:01.1268345" startTime="2014-07-15T19:28:09.2042598-05:00" endTime="2014-07-15T19:28:10.5803916-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f27e870b-6855-46c9-8e1f-51baf7c74db7">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Zoologico.UnitTest1.obtenerInstitucionRazon threw exception: 
+System.ServiceModel.FaultException`1[Zoologico.InstitucionesWS.DataException]: Validation Failed</Message>
+          <StackTrace> 
+Server stack trace: 
+   en System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc&amp; rpc)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData&amp; msgData, Int32 type)
+   en Zoologico.InstitucionesWS.IGestionarSede.ObtenerInstitucionRUC(String ruc)
+   en Zoologico.InstitucionesWS.GestionarSedeClient.ObtenerInstitucionRUC(String ruc) en R:\UPC\Distribuidos\Proyecto\Proyecto\Zoologico\Service References\InstitucionesWS\Reference.cs:línea 181
+   en Zoologico.UnitTest1.obtenerInstitucionRazon() en R:\UPC\Distribuidos\Proyecto\Proyecto\Zoologico\UnitTest1.cs:línea 57
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

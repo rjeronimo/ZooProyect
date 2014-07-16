@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="cd124a21-f20e-485f-9277-f6970481c8d7" name="usuario@HP 2014-07-14 18:31:02" runUser="HP\usuario" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0fda92f3-4914-4cb8-8df3-31deca771d1f">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="usuario_HP 2014-07-14 18_31_02" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-07-14T18:31:02.6269429-05:00" queuing="2014-07-14T18:31:02.6449585-05:00" start="2014-07-14T18:31:02.6499622-05:00" finish="2014-07-14T18:31:04.0273745-05:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="obtener" storage="r:\upc\distribuidos\proyecto\proyecto\zoologico\bin\debug\zoologico.dll" id="acb510ea-211d-1ba2-dad5-d97f83a88071">
+      <Execution id="fab0ea97-e986-4972-a660-fab60c270df0" />
+      <TestMethod codeBase="R:/UPC/Distribuidos/Proyecto/Proyecto/Zoologico/bin/Debug/Zoologico.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Zoologico.UnitTest1, Zoologico, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="obtener" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="acb510ea-211d-1ba2-dad5-d97f83a88071" executionId="fab0ea97-e986-4972-a660-fab60c270df0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="fab0ea97-e986-4972-a660-fab60c270df0" testId="acb510ea-211d-1ba2-dad5-d97f83a88071" testName="obtener" computerName="HP" duration="00:00:01.1171918" startTime="2014-07-14T18:31:02.6519631-05:00" endTime="2014-07-14T18:31:04.0083638-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fab0ea97-e986-4972-a660-fab60c270df0">
+    </UnitTestResult>
+  </Results>
+</TestRun>

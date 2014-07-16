@@ -1,0 +1,5 @@
+R:\UPC\Distribuidos\Proyecto\Proyecto\Zoologico\bin\Debug\Zoologico.dll.config
+R:\UPC\Distribuidos\Proyecto\Proyecto\Zoologico\bin\Debug\Zoologico.dll
+R:\UPC\Distribuidos\Proyecto\Proyecto\Zoologico\bin\Debug\Zoologico.pdb
+R:\UPC\Distribuidos\Proyecto\Proyecto\Zoologico\obj\Debug\Zoologico.dll
+R:\UPC\Distribuidos\Proyecto\Proyecto\Zoologico\obj\Debug\Zoologico.pdb
