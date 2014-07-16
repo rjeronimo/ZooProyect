@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_pe_edu_zoo_model_Person" items="${people}" z="bewBWOPMz7EqYvSdIh3CkbBJJO0=">
+        <table:table data="${people}" id="l_pe_edu_zoo_model_Person" path="/people" z="HhloaV/pWzlhnxwff+l2wdF7Ij0=">
+            <table:column id="c_pe_edu_zoo_model_Person_firtsName" property="firtsName" z="4H0Xe34HGVzxM61iFiR90R8uFKQ="/>
+            <table:column id="c_pe_edu_zoo_model_Person_LastName" property="lastName" z="/BWdNyKfupcRrNVQk83KPtyBJ6A="/>
+            <table:column id="c_pe_edu_zoo_model_Person_phone" property="phone" z="E2RiGu/Bp+gJextTbDc3r6kf50Q="/>
+            <table:column id="c_pe_edu_zoo_model_Person_dni" property="dni" z="ewRjbR0idf2wsgrlhVNLInR7N/0="/>
+            <table:column id="c_pe_edu_zoo_model_Person_password" property="password" z="VZIOlUjzqeymqC5wdps8TcDXQ+c="/>
+        </table:table>
+    </page:list>
+</div>
