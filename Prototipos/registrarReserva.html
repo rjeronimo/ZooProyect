@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Title Page</title>
+		<meta charset=utf-8>
+		<meta name=description content="">
+		<meta name=viewport content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	</head>
+	<body>
+		
+		<header class="row">
+			<div class="well">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-8">
+						<h1 class="text-center">Sistema de Gestion de Zoologico</h1>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4  col-xs-offset-1 col-sm-offset-6 col-md-offset-8">
+						<p>
+							<i class="glyphicon glyphicon-user"></i>
+							Bienvenido <em>Rut Jerónimo</em> &nbsp;&nbsp;
+							<a href="login.html" ><i class="glyphicon glyphicon-off"></i>&nbsp;Cerrar Sesion</a>								
+						</p>
+					</div>
+				</div>
+			</div>
+			
+		</header>
+
+		<div class="container">
+			
+			<!-- Menú-->
+			<div class="col-xs-4 col-sm-3 col-md-3">
+				<div class="list-group">
+					<a href="'registrarReserva.html'" class="list-group-item">Crear Reserva</a>
+					<a href="evaluar_reserva.html" class="list-group-item">Evaluar Reserva</a>
+					<a href="consultar_reserva.html" class="list-group-item">Consultar Reserva</a>
+				</div>
+			</div>
+
+			<div class="col-sm-9 col-md-9" role="main">
+				<div class="container-fluid">
+					<div class="page-header">
+						<h2>Registrar Reserva</h2>
+					</div>
+
+
+					<div class="row">
+
+						<div class="panel panel-default">
+							<div class="panel-heading">
+
+								<h3 class="panel-title">Registrar Reserva</h3>
+
+							</div>
+							<div class="panel-body">
+								
+
+								<form action="registrarPersona.html" class="form-horizontal" role="form">
+									<fieldset>										
+										<div class="col-md-6">
+											<div class="form-group">
+												<label for="txtNombre" class="col-lg-3 control-label">Institucion</label>
+												<div class="col-lg-9">
+													<input type="text" class="form-control" id="txtNombre">
+												</div>										
+											</div>
+											<div class="form-group">
+												<label for="cboEstado" class="col-lg-3 control-label">Turno</label>
+												<div class="col-lg-9">											
+													<select id="cboEstado" class="form-control">
+														<option>Mañana</option>
+														<option>Tarde</option>
+														<option>Full Day</option>
+													</select>										
+												</div>
+											</div>
+
+											<div class="form-group">
+												<label for="txtCantidad" class="col-lg-3 control-label">Cantidad de Asistentes</label>
+												<div class="col-lg-9">
+													<input type="text" class="form-control" id="txtCantidad">
+												</div>										
+											</div>
+										</div>
+
+
+										<div class="col-md-6">
+
+											<div class="form-group">
+												<label for="txtRepresentante" class="col-lg-3 control-label">Representante</label>
+												<div class="col-lg-9">
+													<input type="text" class="form-control" id="txtRepresentante">
+												</div>										
+											</div>
+
+											
+											<div class="form-group">
+												<label for="txtFecIni" class="col-lg-3 control-label">Fecha </label>
+												<div class="col-lg-9">
+													<div class="input-group">
+												      <input type="date" name="" id="txtFecIni" class="form-control" value="" required="required" title="">
+												      <span class="input-group-btn">
+												        <button class="btn btn-default" type="button">
+															<span class="glyphicon glyphicon-calendar"></span>
+												        </button>
+												      </span>
+												    </div>
+											    </div>
+											</div>
+
+											<div class="form-group">
+												<label for="cboEstado" class="col-lg-3 control-label">Preferencias</label>
+												<div class="col-lg-9">											
+													<select id="cboEstado" class="form-control">
+														<option>Todos</option>
+														<option>Felinario</option>
+														<option>Mamiferos</option>
+													</select>										
+												</div>
+											</div>
+											
+										</div>
+									</fieldset>
+								</form>
+
+								<div align="center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Crear</button>
+
+										<button type="button" class="btn btn-info" onclick="window.location.href='login.html'">Cancelar</button>
+
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+
+
+						<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal">
+						        	<span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
+						        <h4 class="modal-title" id="myModalLabel">Regsitro Exitoso</h4>
+						      </div>
+						      <div class="modal-body">
+						        	Su reserva se registro con éxito.
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+
+
+					</div>
+
+				</div>
+
+			</div>
+						
+		</div>
+
+		<!-- jQuery -->
+		<script src="js/jquery.min.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

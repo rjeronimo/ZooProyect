@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Title Page</title>
+		<meta charset=utf-8>
+		<meta name=description content="">
+		<meta name=viewport content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	</head>
+	<body>
+
+		<header class="row">
+			<div class="well">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-8">
+						<h1 class="text-center">Sistema de Gestion de Zoologico</h1>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4  col-xs-offset-1 col-sm-offset-6 col-md-offset-8">
+						<p>
+							<i class="glyphicon glyphicon-user"></i>
+							Bienvenido <em>Rut Jeronimo</em> &nbsp;&nbsp;
+							<a href="login.html" ><i class="glyphicon glyphicon-off"></i>&nbsp;Cerrar Sesion</a>								
+						</p>
+					</div>
+				</div>
+			</div>
+
+		</header>
+
+		<div class="container">
+
+			<!-- Menú-->
+			<div class="col-xs-4 col-sm-3 col-md-3">
+				<div class="list-group">
+					<a href="gestionar_itinerario.html" class="list-group-item">Gestionar_itinerario</a>
+				</div>
+			</div>
+
+			<div class="col-sm-9 col-md-9" role="main">
+				<div class="container-fluid">
+					<div class="page-header">
+						<h2>Consultar Guias</h2>
+					</div>
+
+
+					<div class="row">
+
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title"></h3>
+							</div>
+							<div class="panel-body">
+
+
+								<form action="registrarPersona.html" class="form-horizontal" role="form">
+									<fieldset>
+										<legend></legend>
+											<div class="col-md-6">
+												<div class="form-group">
+													<label for="txtDNI" class="col-lg-3 control-label">DNI</label>
+													<div class="col-lg-9">
+														<input type="text" class="form-control" id="txtRUC">
+														<button  type="button" class="btn btn-primary">Buscar</button>
+													</div>										
+												</div>
+
+											</div>
+											<div class="col-md-6">
+
+												<div class="form-group">
+													<label for="txtapellido" class="col-lg-3 control-label">Apellido</label>
+													<div class="col-lg-9">
+														<input type="text" class="form-control" id="txtapellido">
+														
+													</div>	
+
+												</div>											
+
+											</div>
+									</fieldset>
+									<fieldset>		
+									<table align="center" style="width:300px" border="1px solid black">
+
+									        <tr>
+									            <td class="style3">
+									                Nombres </td>
+									            <td class="style5">
+									                Apellidos</td>
+									            <td class="style3">
+									                DNI </td>
+									            <td class="style2">
+									             Seleccionar</td>
+									        </tr>
+									        <tr>
+									            <td class="style7">
+									                Juanito
+									            </td>
+									            <td class="style8">
+									                Perez</td>
+									            <td class="style8">
+									                76675467</td>
+									            <td class="style9">
+									                <input id="Checkbox1" type="checkbox" /></td>
+									        </tr>
+									        <tr>
+									            <td class="style7">
+									                Juanita
+									            </td>
+									            <td class="style8">
+									                Perales</td>
+									            <td class="style8">
+									                34544356</td>
+									            <td class="style9">
+									                <input id="Checkbox1" type="checkbox" /></td>
+									        </tr>
+									        <tr>
+									            <td class="style7">
+									                Juanancha
+									            </td>
+									            <td class="style8">
+									                PSuarez</td>
+									            <td class="style8">
+									                76675467</td>
+									            <td class="style9">
+									                <input id="Checkbox1" type="checkbox" /></td>
+									        </tr>
+
+									    </table>
+									
+
+								    </fieldset>
+									<table align="center" style="width:300px" border="1px solid black">
+								    <div class="btn-group" align ="center">
+										
+									</div>
+								</table>
+								</form>
+								<div align="center">
+									<div class="btn-group">
+										<span>
+										 <button class="btn btn-primary" onclick="window.location.href='gestionar_itinerario.html'" type="button">
+										<span></span> Seleccionar  </button>
+									     </span>
+									     <span>
+										 <button class="btn btn-info" onclick="window.location.href='gestionar_itinerario.html'" type="button">
+										 <span></span> Cancelar  </button>
+									     </span>
+									</div>
+								</div>
+
+									
+							</div>
+						</div>
+
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- jQuery -->
+		<script src="js/jquery.min.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
