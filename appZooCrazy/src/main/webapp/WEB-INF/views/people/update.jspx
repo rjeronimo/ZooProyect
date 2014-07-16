@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_pe_edu_zoo_model_Person" modelAttribute="person" path="/people" versionField="none" z="VdrzitQaxJ8YqIcBNpD4bam9iSg=">
+        <field:input field="firtsName" id="c_pe_edu_zoo_model_Person_firtsName" required="true" z="OsbG+pa6bD7vAC2ZdmRf8tyGQMA="/>
+        <field:input field="LastName" id="c_pe_edu_zoo_model_Person_LastName" required="true" z="l2M+mmMKVOXyr8TLnmY6tmKO6wQ="/>
+        <field:input field="phone" id="c_pe_edu_zoo_model_Person_phone" z="STLR4LtPfuLpwREJamkpERjCnDg="/>
+        <field:input field="dni" id="c_pe_edu_zoo_model_Person_dni" required="true" z="FXDWj7L+EgoXhdvsU1ft7ZTqmww="/>
+        <field:input field="password" id="c_pe_edu_zoo_model_Person_password" required="true" z="lhCUJzLTkMEHp/vGyn9Wat88Z1g="/>
+    </form:update>
+</div>

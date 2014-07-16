@@ -1,0 +1,15 @@
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-07-15 17:42:13
+project --topLevelPackage pe.edu.zoo --projectName zoocrazy
+mongo setup --databaseName zoocrazy --host localhost 
+entity mongo --class ~.model.Person --testAutomatically
+field string --fieldName firtsName --notNull
+field string --fieldName LastName --notNull
+field string --fieldName phone
+field string --fieldName dni --notNull
+field string --fieldName password --notNull
+repository mongo --interface ~.repository.PersonRepository --entity ~.model.Person
+web mvc setup
+web mvc scaffold --class ~.web.PersonController
+perform package
+exit
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-07-15 17:50:56

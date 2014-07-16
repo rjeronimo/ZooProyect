@@ -1,0 +1,11 @@
+<aspectj>
+<aspects>
+<aspect name="pe.edu.zoo.repository.PersonRepository_Roo_Mongo_Repository"/>
+<aspect name="pe.edu.zoo.web.ApplicationConversionServiceFactoryBean_Roo_ConversionService"/>
+<aspect name="pe.edu.zoo.web.PersonController_Roo_Controller"/>
+<aspect name="pe.edu.zoo.model.Person_Roo_ToString"/>
+<aspect name="pe.edu.zoo.model.Person_Roo_Mongo_Entity"/>
+<aspect name="pe.edu.zoo.model.Person_Roo_JavaBean"/>
+</aspects>
+</aspectj>
+

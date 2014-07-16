@@ -5,3 +5,8 @@ R:\UPC\Distribuidos\Proyecto\Proyecto\Proyecto\bin\NHibernate.dll
 R:\UPC\Distribuidos\Proyecto\Proyecto\Proyecto\bin\SOAPServicesTest.dll
 R:\UPC\Distribuidos\Proyecto\Proyecto\Proyecto\obj\Debug\Proyecto.dll
 R:\UPC\Distribuidos\Proyecto\Proyecto\Proyecto\obj\Debug\Proyecto.pdb
+C:\Users\sandovlu\Documents\GitHub\ZooProyect\Proyecto\bin\Proyecto.dll
+C:\Users\sandovlu\Documents\GitHub\ZooProyect\Proyecto\bin\Proyecto.pdb
+C:\Users\sandovlu\Documents\GitHub\ZooProyect\Proyecto\obj\Debug\Proyecto.csprojResolveAssemblyReference.cache
+C:\Users\sandovlu\Documents\GitHub\ZooProyect\Proyecto\obj\Debug\Proyecto.dll
+C:\Users\sandovlu\Documents\GitHub\ZooProyect\Proyecto\obj\Debug\Proyecto.pdb
