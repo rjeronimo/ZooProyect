@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="b651cf17-5821-42e0-8f72-a17d874826ae" name="usuario@HP 2014-08-03 01:27:10" runUser="HP\usuario" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0fda92f3-4914-4cb8-8df3-31deca771d1f">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="usuario_HP 2014-08-03 01_27_10" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-08-03T01:27:10.8085714-05:00" queuing="2014-08-03T01:27:12.4211111-05:00" start="2014-08-03T01:27:12.5191763-05:00" finish="2014-08-03T01:27:13.7033507-05:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="4" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="3" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="HP" outcome="Error" timestamp="2014-08-03T01:27:13.7023489-05:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="listar" storage="r:\upc\distribuidos\proyecto\proyecto\zoologico\bin\debug\zoologico.dll" id="252f3117-e5ee-8cfb-463f-697079c9fd33">
+      <Execution id="34657ec8-7bbb-4405-b9e3-38c6a9ffecfb" />
+      <TestMethod codeBase="R:/UPC/Distribuidos/Proyecto/Proyecto/Zoologico/bin/Debug/Zoologico.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Zoologico.UnitTest1, Zoologico, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="listar" />
+    </UnitTest>
+    <UnitTest name="ListarReserva" storage="r:\upc\distribuidos\proyecto\proyecto\zoologico\bin\debug\zoologico.dll" id="0b853264-5142-3363-e6c0-9e1f4969e1c8">
+      <Execution id="1619c47c-e287-4653-80fa-540546d0955b" />
+      <TestMethod codeBase="R:/UPC/Distribuidos/Proyecto/Proyecto/Zoologico/bin/Debug/Zoologico.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Zoologico.RESTUnitTests, Zoologico, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ListarReserva" />
+    </UnitTest>
+    <UnitTest name="obtenerInstitucionRUC" storage="r:\upc\distribuidos\proyecto\proyecto\zoologico\bin\debug\zoologico.dll" id="ac567664-e6ff-8d21-c441-265c97ab8296">
+      <Execution id="fa268783-4c81-40c1-91f9-5d7fb38e8678" />
+      <TestMethod codeBase="R:/UPC/Distribuidos/Proyecto/Proyecto/Zoologico/bin/Debug/Zoologico.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Zoologico.UnitTest1, Zoologico, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="obtenerInstitucionRUC" />
+    </UnitTest>
+    <UnitTest name="CrearReserva" storage="r:\upc\distribuidos\proyecto\proyecto\zoologico\bin\debug\zoologico.dll" id="511e0812-edd8-7682-601e-c76ec40b2c15">
+      <Execution id="28365fb6-94ec-4f1b-b7cc-df6d5ffc755b" />
+      <TestMethod codeBase="R:/UPC/Distribuidos/Proyecto/Proyecto/Zoologico/bin/Debug/Zoologico.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Zoologico.RESTUnitTests, Zoologico, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CrearReserva" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0b853264-5142-3363-e6c0-9e1f4969e1c8" executionId="1619c47c-e287-4653-80fa-540546d0955b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="252f3117-e5ee-8cfb-463f-697079c9fd33" executionId="34657ec8-7bbb-4405-b9e3-38c6a9ffecfb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="511e0812-edd8-7682-601e-c76ec40b2c15" executionId="28365fb6-94ec-4f1b-b7cc-df6d5ffc755b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ac567664-e6ff-8d21-c441-265c97ab8296" executionId="fa268783-4c81-40c1-91f9-5d7fb38e8678" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="1619c47c-e287-4653-80fa-540546d0955b" testId="0b853264-5142-3363-e6c0-9e1f4969e1c8" testName="ListarReserva" computerName="HP" duration="00:00:01.0966820" startTime="2014-08-03T01:27:12.6066687-05:00" endTime="2014-08-03T01:27:13.7033507-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1619c47c-e287-4653-80fa-540546d0955b">
+    </UnitTestResult>
+    <UnitTestResult executionId="34657ec8-7bbb-4405-b9e3-38c6a9ffecfb" testId="252f3117-e5ee-8cfb-463f-697079c9fd33" testName="listar" computerName="HP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="34657ec8-7bbb-4405-b9e3-38c6a9ffecfb">
+    </UnitTestResult>
+    <UnitTestResult executionId="28365fb6-94ec-4f1b-b7cc-df6d5ffc755b" testId="511e0812-edd8-7682-601e-c76ec40b2c15" testName="CrearReserva" computerName="HP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="28365fb6-94ec-4f1b-b7cc-df6d5ffc755b">
+    </UnitTestResult>
+    <UnitTestResult executionId="fa268783-4c81-40c1-91f9-5d7fb38e8678" testId="ac567664-e6ff-8d21-c441-265c97ab8296" testName="obtenerInstitucionRUC" computerName="HP" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fa268783-4c81-40c1-91f9-5d7fb38e8678">
+    </UnitTestResult>
+  </Results>
+</TestRun>

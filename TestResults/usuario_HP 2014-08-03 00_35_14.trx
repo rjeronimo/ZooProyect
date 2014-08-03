@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="8b8e0f58-0e7e-4aad-a4cb-50582a7586b7" name="usuario@HP 2014-08-03 00:35:14" runUser="HP\usuario" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0fda92f3-4914-4cb8-8df3-31deca771d1f">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="usuario_HP 2014-08-03 00_35_14" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-08-03T00:35:14.8194359-05:00" queuing="2014-08-03T00:35:16.3625953-05:00" start="2014-08-03T00:35:16.4676640-05:00" finish="2014-08-03T00:35:50.2765914-05:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="4" executed="4" passed="1" error="0" failed="2" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="HP" outcome="Error" timestamp="2014-08-03T00:35:50.2765914-05:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="listar" storage="r:\upc\distribuidos\proyecto\proyecto\zoologico\bin\debug\zoologico.dll" id="252f3117-e5ee-8cfb-463f-697079c9fd33">
+      <Execution id="5dbacb69-57cf-4eb9-a1df-0d67cc784560" />
+      <TestMethod codeBase="R:/UPC/Distribuidos/Proyecto/Proyecto/Zoologico/bin/Debug/Zoologico.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Zoologico.UnitTest1, Zoologico, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="listar" />
+    </UnitTest>
+    <UnitTest name="ListarReserva" storage="r:\upc\distribuidos\proyecto\proyecto\zoologico\bin\debug\zoologico.dll" id="0b853264-5142-3363-e6c0-9e1f4969e1c8">
+      <Execution id="2ad1c6e5-3acc-4473-b9f3-4db95bd73b39" />
+      <TestMethod codeBase="R:/UPC/Distribuidos/Proyecto/Proyecto/Zoologico/bin/Debug/Zoologico.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Zoologico.RESTUnitTests, Zoologico, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ListarReserva" />
+    </UnitTest>
+    <UnitTest name="obtenerInstitucionRUC" storage="r:\upc\distribuidos\proyecto\proyecto\zoologico\bin\debug\zoologico.dll" id="ac567664-e6ff-8d21-c441-265c97ab8296">
+      <Execution id="0c519625-d687-4c73-8e49-a4e3fe616095" />
+      <TestMethod codeBase="R:/UPC/Distribuidos/Proyecto/Proyecto/Zoologico/bin/Debug/Zoologico.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Zoologico.UnitTest1, Zoologico, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="obtenerInstitucionRUC" />
+    </UnitTest>
+    <UnitTest name="CrearReserva" storage="r:\upc\distribuidos\proyecto\proyecto\zoologico\bin\debug\zoologico.dll" id="511e0812-edd8-7682-601e-c76ec40b2c15">
+      <Execution id="b4f7225b-817f-4533-96f0-17d362a6e036" />
+      <TestMethod codeBase="R:/UPC/Distribuidos/Proyecto/Proyecto/Zoologico/bin/Debug/Zoologico.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Zoologico.RESTUnitTests, Zoologico, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CrearReserva" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="252f3117-e5ee-8cfb-463f-697079c9fd33" executionId="5dbacb69-57cf-4eb9-a1df-0d67cc784560" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ac567664-e6ff-8d21-c441-265c97ab8296" executionId="0c519625-d687-4c73-8e49-a4e3fe616095" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0b853264-5142-3363-e6c0-9e1f4969e1c8" executionId="2ad1c6e5-3acc-4473-b9f3-4db95bd73b39" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="511e0812-edd8-7682-601e-c76ec40b2c15" executionId="b4f7225b-817f-4533-96f0-17d362a6e036" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="5dbacb69-57cf-4eb9-a1df-0d67cc784560" testId="252f3117-e5ee-8cfb-463f-697079c9fd33" testName="listar" computerName="HP" duration="00:00:11.5139360" startTime="2014-08-03T00:35:16.5487175-05:00" endTime="2014-08-03T00:35:28.7241800-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5dbacb69-57cf-4eb9-a1df-0d67cc784560">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Zoologico.UnitTest1.listar threw exception: 
+System.ServiceModel.EndpointNotFoundException: No había ningún extremo escuchando en http://localhost:3526/GestionarInstitucion.svc que pudiera aceptar el mensaje. La causa suele ser una dirección o una acción SOAP incorrecta. Consulte InnerException, si está presente, para obtener más información. ---&gt; System.Net.WebException: No es posible conectar con el servidor remoto ---&gt; System.Net.Sockets.SocketException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión 127.0.0.1:3526</Message>
+          <StackTrace>    en System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   en System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket&amp; socket, IPAddress&amp; address, ConnectSocketState state, IAsyncResult asyncResult, Exception&amp; exception)
+ --- End of inner exception stack trace ---
+    en System.Net.HttpWebRequest.GetRequestStream(TransportContext&amp; context)
+   en System.Net.HttpWebRequest.GetRequestStream()
+   en System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+ --- End of inner exception stack trace ---
+ 
+Server stack trace: 
+   en System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   en System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   en System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData&amp; msgData, Int32 type)
+   en Zoologico.InstitucionesWS.IGestionarSede.ListaInstitucion()
+   en Zoologico.InstitucionesWS.GestionarSedeClient.ListaInstitucion() en R:\UPC\Distribuidos\Proyecto\Proyecto\Zoologico\Service References\InstitucionesWS\Reference.cs:línea 189
+   en Zoologico.UnitTest1.listar() en R:\UPC\Distribuidos\Proyecto\Proyecto\Zoologico\UnitTest1.cs:línea 25
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0c519625-d687-4c73-8e49-a4e3fe616095" testId="ac567664-e6ff-8d21-c441-265c97ab8296" testName="obtenerInstitucionRUC" computerName="HP" duration="00:00:06.2414981" startTime="2014-08-03T00:35:28.7492121-05:00" endTime="2014-08-03T00:35:35.1225348-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0c519625-d687-4c73-8e49-a4e3fe616095">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Zoologico.UnitTest1.obtenerInstitucionRUC threw exception: 
+System.ServiceModel.EndpointNotFoundException: No había ningún extremo escuchando en http://localhost:3526/GestionarInstitucion.svc que pudiera aceptar el mensaje. La causa suele ser una dirección o una acción SOAP incorrecta. Consulte InnerException, si está presente, para obtener más información. ---&gt; System.Net.WebException: No es posible conectar con el servidor remoto ---&gt; System.Net.Sockets.SocketException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión 127.0.0.1:3526</Message>
+          <StackTrace>    en System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   en System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket&amp; socket, IPAddress&amp; address, ConnectSocketState state, IAsyncResult asyncResult, Exception&amp; exception)
+ --- End of inner exception stack trace ---
+    en System.Net.HttpWebRequest.GetRequestStream(TransportContext&amp; context)
+   en System.Net.HttpWebRequest.GetRequestStream()
+   en System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+ --- End of inner exception stack trace ---
+ 
+Server stack trace: 
+   en System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   en System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   en System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData&amp; msgData, Int32 type)
+   en Zoologico.InstitucionesWS.IGestionarSede.ObtenerInstitucionRUC(String ruc)
+   en Zoologico.InstitucionesWS.GestionarSedeClient.ObtenerInstitucionRUC(String ruc) en R:\UPC\Distribuidos\Proyecto\Proyecto\Zoologico\Service References\InstitucionesWS\Reference.cs:línea 181
+   en Zoologico.UnitTest1.obtenerInstitucionRUC() en R:\UPC\Distribuidos\Proyecto\Proyecto\Zoologico\UnitTest1.cs:línea 42
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2ad1c6e5-3acc-4473-b9f3-4db95bd73b39" testId="0b853264-5142-3363-e6c0-9e1f4969e1c8" testName="ListarReserva" computerName="HP" duration="00:00:01.3531965" startTime="2014-08-03T00:35:35.1475707-05:00" endTime="2014-08-03T00:35:36.5294005-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2ad1c6e5-3acc-4473-b9f3-4db95bd73b39">
+    </UnitTestResult>
+    <UnitTestResult executionId="b4f7225b-817f-4533-96f0-17d362a6e036" testId="511e0812-edd8-7682-601e-c76ec40b2c15" testName="CrearReserva" computerName="HP" duration="00:00:13.7234426" startTime="2014-08-03T00:35:36.5531488-05:00" endTime="2014-08-03T00:35:50.2765914-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b4f7225b-817f-4533-96f0-17d362a6e036">
+    </UnitTestResult>
+  </Results>
+</TestRun>
