@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="e8212764-6fa5-4360-a005-c22e70e62465" name="usuario@HP 2014-08-02 00:03:47" runUser="HP\usuario" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0fda92f3-4914-4cb8-8df3-31deca771d1f">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="usuario_HP 2014-08-02 00_03_47" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-08-02T00:03:47.0359055-05:00" queuing="2014-08-02T00:03:47.0419099-05:00" start="2014-08-02T00:03:47.0469137-05:00" finish="2014-08-02T00:03:48.8273330-05:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CrearReserva" storage="r:\upc\distribuidos\proyecto\proyecto\zoologico\bin\debug\zoologico.dll" id="511e0812-edd8-7682-601e-c76ec40b2c15">
+      <Execution id="f5b58c43-c11c-4bb6-a65f-25386005214f" />
+      <TestMethod codeBase="R:/UPC/Distribuidos/Proyecto/Proyecto/Zoologico/bin/Debug/Zoologico.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Zoologico.RESTUnitTests, Zoologico, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CrearReserva" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="511e0812-edd8-7682-601e-c76ec40b2c15" executionId="f5b58c43-c11c-4bb6-a65f-25386005214f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="f5b58c43-c11c-4bb6-a65f-25386005214f" testId="511e0812-edd8-7682-601e-c76ec40b2c15" testName="CrearReserva" computerName="HP" duration="00:00:01.2601630" startTime="2014-08-02T00:03:47.0479139-05:00" endTime="2014-08-02T00:03:48.8043165-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f5b58c43-c11c-4bb6-a65f-25386005214f">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Zoologico.RESTUnitTests.CrearReserva threw exception: 
+System.ArgumentException: Primitivo JSON no válido: .</Message>
+          <StackTrace>    en System.Web.Script.Serialization.JavaScriptObjectDeserializer.DeserializePrimitiveObject()
+   en System.Web.Script.Serialization.JavaScriptObjectDeserializer.DeserializeInternal(Int32 depth)
+   en System.Web.Script.Serialization.JavaScriptObjectDeserializer.BasicDeserialize(String input, Int32 depthLimit, JavaScriptSerializer serializer)
+   en System.Web.Script.Serialization.JavaScriptSerializer.Deserialize(JavaScriptSerializer serializer, String input, Type type, Int32 depthLimit)
+   en System.Web.Script.Serialization.JavaScriptSerializer.Deserialize[T](String input)
+   en Zoologico.RESTUnitTests.CrearReserva() en R:\UPC\Distribuidos\Proyecto\Proyecto\Zoologico\RESTUnitTests.cs:línea 67
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

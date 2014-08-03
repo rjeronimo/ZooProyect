@@ -1,0 +1,7 @@
+R:\UPC\Distribuidos\Proyecto\Proyecto\Proyecto\bin\Proyecto.dll
+R:\UPC\Distribuidos\Proyecto\Proyecto\Proyecto\bin\Proyecto.pdb
+R:\UPC\Distribuidos\Proyecto\Proyecto\Proyecto\bin\Iesi.Collections.dll
+R:\UPC\Distribuidos\Proyecto\Proyecto\Proyecto\bin\NHibernate.dll
+R:\UPC\Distribuidos\Proyecto\Proyecto\Proyecto\bin\SOAPServicesTest.dll
+R:\UPC\Distribuidos\Proyecto\Proyecto\Proyecto\obj\Debug\Proyecto.dll
+R:\UPC\Distribuidos\Proyecto\Proyecto\Proyecto\obj\Debug\Proyecto.pdb

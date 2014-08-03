@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="197443e3-981c-4cd0-bda2-5c97dec8cdda" name="usuario@HP 2014-08-03 00:30:49" runUser="HP\usuario" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0fda92f3-4914-4cb8-8df3-31deca771d1f">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="usuario_HP 2014-08-03 00_30_49" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-08-03T00:30:49.0445457-05:00" queuing="2014-08-03T00:30:53.0979832-05:00" start="2014-08-03T00:30:53.1991684-05:00" finish="2014-08-03T00:31:27.3756150-05:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="HP" outcome="Error" timestamp="2014-08-03T00:31:27.3746163-05:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CrearReserva" storage="r:\upc\distribuidos\proyecto\proyecto\zoologico\bin\debug\zoologico.dll" id="511e0812-edd8-7682-601e-c76ec40b2c15">
+      <Execution id="5a593b4e-164d-434b-8726-58d65b01a788" />
+      <TestMethod codeBase="R:/UPC/Distribuidos/Proyecto/Proyecto/Zoologico/bin/Debug/Zoologico.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Zoologico.RESTUnitTests, Zoologico, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CrearReserva" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="511e0812-edd8-7682-601e-c76ec40b2c15" executionId="5a593b4e-164d-434b-8726-58d65b01a788" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="5a593b4e-164d-434b-8726-58d65b01a788" testId="511e0812-edd8-7682-601e-c76ec40b2c15" testName="CrearReserva" computerName="HP" duration="00:00:34.0171171" startTime="2014-08-03T00:30:53.3584979-05:00" endTime="2014-08-03T00:31:27.3756150-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5a593b4e-164d-434b-8726-58d65b01a788">
+    </UnitTestResult>
+  </Results>
+</TestRun>

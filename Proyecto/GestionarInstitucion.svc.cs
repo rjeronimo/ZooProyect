@@ -10,7 +10,7 @@ using Proyecto.Persistencia;
 namespace Proyecto
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "GestionarSede" in code, svc and config file together.
-    public class GestionarSede : IGestionarSede
+    public class GestionarSede : IGestionarInstitucion
     {
 
         private InstitucionDAO dao = new InstitucionDAO();
