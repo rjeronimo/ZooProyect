@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:dt="http://github.com/dandelion/datatables">
+<head th:include="fragments/header :: head">
+	<title th:text="#{view.index.title}"> / Lista Reserva</title>
+</head>
+<body>
+	
+	<header th:replace="fragments/header :: header">&nbsp;</header>
+	
+	<div class="container" th:fragment="content">
+
+		<div th:replace="fragments/menu :: menu"></div>
+		
+		<div class="col-sm-9 col-md-9" role="main">
+			<div class="container-fluid">
+				<div class="page-header">
+					<h2>Lista de Reservas</h2>
+				</div>
+
+				<div class="row">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Lista de Reservas</h3>
+						</div>
+						<div class="panel-body">
+						
+							<table class="table table-bordered table-striped table-hover">
+								<thead>
+							        <tr>
+							            <th>Codigo Reserva</th>
+							            <th>Institucion</th>
+							            <th>Asistentes</th>
+							            <th>Turno</th>
+							            <th>Fecha Reserva</th>
+							            <th>Zonas de Preferencia</th>
+							            <th>Estado</th>
+							        </tr>								
+								</thead>
+								<tbody>
+									<tr th:unless="${!reservas.isEmpty()}">
+							            <td colspan="7"><p class="text-muted" th:text="#{noRecords}">No records found</p></td>
+							        </tr>
+									<tr th:each="item : ${reservas}">
+										<td th:text="${item.getCodigoReserva()}"></td>
+										<td th:text="${item.getTxtIntitucion()}"></td>
+										<td th:text="${item.getAsistentes()}"></td>
+										<td th:text="${item.getTurno()}"></td>
+										<td th:text="${item.getFecha_reserva()}"></td>
+										<td th:text="${item.getTxtRepresentante()}"></td>
+										<td th:text="${item.getPreferencias()}"></td>
+									</tr>									
+								</tbody>
+								
+								<tfoot>
+									<tr>
+										<td colspan="7">
+											<div class="btn-group">
+												<div class="btn-group">
+												<a href="../reservas/registrarReservas.html" th:href="@{/reserve/register}" 
+														class="btn btn-default">Crear Requerimiento</a>
+												</div>
+											</div>
+										</td>
+									</tr>
+								</tfoot>
+
+							</table>
+
+						</div>
+					</div>
+
+
+					<div class="modal fade" id="messageSusses" tabindex="-1"
+						role="dialog" aria-labelledby="messageSusses" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">
+										<span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span>
+									</button>
+									<h4 class="modal-title" id="myModalLabel">Registro Exitoso</h4>
+								</div>
+								<div class="modal-body">Su reserva se registro con exito.
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default"
+										data-dismiss="modal">Cerrar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<script type="text/javascript">
+		$.fn.datepicker.defaults.format = "dd/mm/yyyy";
+		  $(function() {
+		    $('#startDate').datepicker();
+		  });
+	</script>
+	
+	<footer th:replace="fragments/footer :: footer"></footer>
+</body>
+</html>

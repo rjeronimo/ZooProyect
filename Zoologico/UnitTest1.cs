@@ -18,7 +18,7 @@ namespace Zoologico
         public void listar()
         {
             // 1. Instanciar el objeto a ser probado
-            InstitucionesWS.GestionarSedeClient proxy = new InstitucionesWS.GestionarSedeClient();
+            InstitucionesWS.GestionarInstitucionClient proxy = new InstitucionesWS.GestionarInstitucionClient();
             // 2. Invocar el método con los argumentos de prueba
 
             IList<InstitucionesWS.Institucions> institucions;
@@ -27,14 +27,14 @@ namespace Zoologico
             int total = institucions.Count;
 
             // 3. Realizar la validación de los criterios de prueba
-            Assert.AreEqual(3, total);
+            Assert.IsNotNull(institucions);
         }
 
         [TestMethod]
         public void obtenerInstitucionRUC()
         {
             // 1. Instanciar el objeto a ser probado
-            InstitucionesWS.GestionarSedeClient proxy = new InstitucionesWS.GestionarSedeClient();
+            InstitucionesWS.GestionarInstitucionClient proxy = new InstitucionesWS.GestionarInstitucionClient();
             // 2. Invocar el método con los argumentos de prueba
 
             InstitucionesWS.Institucions institucion;

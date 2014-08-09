@@ -10,16 +10,16 @@ namespace Proyecto_REST.Dominio
     public class Reservas
     {
         [DataMember]
-        public string CodigoReserva { get; set; }
+        public int codigoReserva { get; set; }
         [DataMember]
-        public string CodigoUsuario { get; set; }
+        public string codigoUsuario { get; set; }
         [DataMember]
-        public string Asistentes { get; set; }
+        public string asistentes { get; set; }
         [DataMember]
-        public string Fecha_reserva { get; set; }
+        public string fecha_reserva { get; set; }
         [DataMember]
-        public string Turno { get; set; }
+        public string turno { get; set; }
         [DataMember]
-        public string Preferencias { get; set; }
+        public string preferencias { get; set; }
     }
 }

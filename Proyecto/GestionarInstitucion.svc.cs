@@ -10,7 +10,7 @@ using Proyecto.Persistencia;
 namespace Proyecto
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "GestionarSede" in code, svc and config file together.
-    public class GestionarSede : IGestionarInstitucion
+    public class GestionarInstitucion : IGestionarInstitucion
     {
 
         private InstitucionDAO dao = new InstitucionDAO();
@@ -25,7 +25,7 @@ namespace Proyecto
             }
             else
             {
-                throw new FaultException<DataException>(new DataException() { DataError = "La institucion con el RUC ingresado no existe" }, new FaultReason("Validation Failed"));
+                throw new FaultException<DataException>(new DataException() { DataError = "La institucion con el RUC ingresado no existe" }, new FaultReason("La institucion con el RUC ingresado no existe"));
                
             }
             
@@ -43,7 +43,7 @@ namespace Proyecto
             else
             {
 
-              throw new FaultException<DataException>(new DataException() { DataError = "La institucion con la Razon Social ingresad no existe" }, new FaultReason("Validation Failed"));
+                throw new FaultException<DataException>(new DataException() { DataError = "La institucion con la Razon Social ingresad no existe" }, new FaultReason("La institucion con el Razon Social ingresado no existe"));
                 
             }
              

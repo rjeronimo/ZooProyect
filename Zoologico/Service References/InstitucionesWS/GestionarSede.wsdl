@@ -7,46 +7,46 @@
       <xsd:import schemaLocation="http://localhost:3526/GestionarInstitucion.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
     </xsd:schema>
   </wsdl:types>
-  <wsdl:message name="IGestionarSede_ObtenerInstitucionRUC_InputMessage">
+  <wsdl:message name="IGestionarInstitucion_ObtenerInstitucionRUC_InputMessage">
     <wsdl:part name="parameters" element="tns:ObtenerInstitucionRUC" />
   </wsdl:message>
-  <wsdl:message name="IGestionarSede_ObtenerInstitucionRUC_OutputMessage">
+  <wsdl:message name="IGestionarInstitucion_ObtenerInstitucionRUC_OutputMessage">
     <wsdl:part name="parameters" element="tns:ObtenerInstitucionRUCResponse" />
   </wsdl:message>
-  <wsdl:message name="IGestionarSede_ObtenerInstitucionRUC_DataExceptionFault_FaultMessage">
+  <wsdl:message name="IGestionarInstitucion_ObtenerInstitucionRUC_DataExceptionFault_FaultMessage">
     <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/Proyecto.Dominio" name="detail" element="q1:DataException" />
   </wsdl:message>
-  <wsdl:message name="IGestionarSede_ObtenerInstitucionRazon_InputMessage">
+  <wsdl:message name="IGestionarInstitucion_ObtenerInstitucionRazon_InputMessage">
     <wsdl:part name="parameters" element="tns:ObtenerInstitucionRazon" />
   </wsdl:message>
-  <wsdl:message name="IGestionarSede_ObtenerInstitucionRazon_OutputMessage">
+  <wsdl:message name="IGestionarInstitucion_ObtenerInstitucionRazon_OutputMessage">
     <wsdl:part name="parameters" element="tns:ObtenerInstitucionRazonResponse" />
   </wsdl:message>
-  <wsdl:message name="IGestionarSede_ListaInstitucion_InputMessage">
+  <wsdl:message name="IGestionarInstitucion_ListaInstitucion_InputMessage">
     <wsdl:part name="parameters" element="tns:ListaInstitucion" />
   </wsdl:message>
-  <wsdl:message name="IGestionarSede_ListaInstitucion_OutputMessage">
+  <wsdl:message name="IGestionarInstitucion_ListaInstitucion_OutputMessage">
     <wsdl:part name="parameters" element="tns:ListaInstitucionResponse" />
   </wsdl:message>
-  <wsdl:portType name="IGestionarSede">
+  <wsdl:portType name="IGestionarInstitucion">
     <wsdl:operation name="ObtenerInstitucionRUC">
-      <wsdl:input wsaw:Action="http://tempuri.org/IGestionarSede/ObtenerInstitucionRUC" message="tns:IGestionarSede_ObtenerInstitucionRUC_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IGestionarSede/ObtenerInstitucionRUCResponse" message="tns:IGestionarSede_ObtenerInstitucionRUC_OutputMessage" />
-      <wsdl:fault wsaw:Action="http://tempuri.org/IGestionarSede/ObtenerInstitucionRUCDataExceptionFault" name="DataExceptionFault" message="tns:IGestionarSede_ObtenerInstitucionRUC_DataExceptionFault_FaultMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionarInstitucion/ObtenerInstitucionRUC" message="tns:IGestionarInstitucion_ObtenerInstitucionRUC_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionarInstitucion/ObtenerInstitucionRUCResponse" message="tns:IGestionarInstitucion_ObtenerInstitucionRUC_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IGestionarInstitucion/ObtenerInstitucionRUCDataExceptionFault" name="DataExceptionFault" message="tns:IGestionarInstitucion_ObtenerInstitucionRUC_DataExceptionFault_FaultMessage" />
     </wsdl:operation>
     <wsdl:operation name="ObtenerInstitucionRazon">
-      <wsdl:input wsaw:Action="http://tempuri.org/IGestionarSede/ObtenerInstitucionRazon" message="tns:IGestionarSede_ObtenerInstitucionRazon_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IGestionarSede/ObtenerInstitucionRazonResponse" message="tns:IGestionarSede_ObtenerInstitucionRazon_OutputMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionarInstitucion/ObtenerInstitucionRazon" message="tns:IGestionarInstitucion_ObtenerInstitucionRazon_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionarInstitucion/ObtenerInstitucionRazonResponse" message="tns:IGestionarInstitucion_ObtenerInstitucionRazon_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="ListaInstitucion">
-      <wsdl:input wsaw:Action="http://tempuri.org/IGestionarSede/ListaInstitucion" message="tns:IGestionarSede_ListaInstitucion_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IGestionarSede/ListaInstitucionResponse" message="tns:IGestionarSede_ListaInstitucion_OutputMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IGestionarInstitucion/ListaInstitucion" message="tns:IGestionarInstitucion_ListaInstitucion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IGestionarInstitucion/ListaInstitucionResponse" message="tns:IGestionarInstitucion_ListaInstitucion_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
-  <wsdl:binding name="BasicHttpBinding_IGestionarSede" type="tns:IGestionarSede">
+  <wsdl:binding name="BasicHttpBinding_IGestionarInstitucion" type="tns:IGestionarInstitucion">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="ObtenerInstitucionRUC">
-      <soap:operation soapAction="http://tempuri.org/IGestionarSede/ObtenerInstitucionRUC" style="document" />
+      <soap:operation soapAction="http://tempuri.org/IGestionarInstitucion/ObtenerInstitucionRUC" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -58,7 +58,7 @@
       </wsdl:fault>
     </wsdl:operation>
     <wsdl:operation name="ObtenerInstitucionRazon">
-      <soap:operation soapAction="http://tempuri.org/IGestionarSede/ObtenerInstitucionRazon" style="document" />
+      <soap:operation soapAction="http://tempuri.org/IGestionarInstitucion/ObtenerInstitucionRazon" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -67,7 +67,7 @@
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="ListaInstitucion">
-      <soap:operation soapAction="http://tempuri.org/IGestionarSede/ListaInstitucion" style="document" />
+      <soap:operation soapAction="http://tempuri.org/IGestionarInstitucion/ListaInstitucion" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -77,7 +77,7 @@
     </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="GestionarSede">
-    <wsdl:port name="BasicHttpBinding_IGestionarSede" binding="tns:BasicHttpBinding_IGestionarSede">
+    <wsdl:port name="BasicHttpBinding_IGestionarInstitucion" binding="tns:BasicHttpBinding_IGestionarInstitucion">
       <soap:address location="http://localhost:3526/GestionarInstitucion.svc" />
     </wsdl:port>
   </wsdl:service>

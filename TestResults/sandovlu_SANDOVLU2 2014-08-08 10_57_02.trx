@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="9db5c9c8-b6d1-449d-8b71-b97de0b3ce67" name="sandovlu@SANDOVLU2 2014-08-08 10:57:02" runUser="AMERICAS\sandovlu" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0fda92f3-4914-4cb8-8df3-31deca771d1f">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="sandovlu_SANDOVLU2 2014-08-08 10_57_02" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-08-08T10:57:02.8148379-05:00" queuing="2014-08-08T10:57:06.2081772-05:00" start="2014-08-08T10:57:06.5572121-05:00" finish="2014-08-08T10:57:27.2562818-05:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="listar" storage="d:\workspaces\wkspring\gitproyectoupc\proyecto\zoologico\bin\debug\zoologico.dll" id="252f3117-e5ee-8cfb-463f-697079c9fd33">
+      <Execution id="c15db741-0cba-411c-a631-dc2427213a1a" />
+      <TestMethod codeBase="D:/workspaces/wkSpring/gitProyectoUPC/Proyecto/Zoologico/bin/Debug/Zoologico.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Zoologico.UnitTest1, Zoologico, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="listar" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Resultados que no están en la lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="252f3117-e5ee-8cfb-463f-697079c9fd33" executionId="c15db741-0cba-411c-a631-dc2427213a1a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="c15db741-0cba-411c-a631-dc2427213a1a" testId="252f3117-e5ee-8cfb-463f-697079c9fd33" testName="listar" computerName="SANDOVLU2" duration="00:00:19.4199704" startTime="2014-08-08T10:57:06.6512215-05:00" endTime="2014-08-08T10:57:27.1322694-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c15db741-0cba-411c-a631-dc2427213a1a">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Zoologico.UnitTest1.listar threw exception: 
+System.ServiceModel.FaultException: The server was unable to process the request due to an internal error.  For more information about the error, either turn on IncludeExceptionDetailInFaults (either from ServiceBehaviorAttribute or from the &lt;serviceDebug&gt; configuration behavior) on the server in order to send the exception information back to the client, or turn on tracing as per the Microsoft .NET Framework SDK documentation and inspect the server trace logs.</Message>
+          <StackTrace> 
+Server stack trace: 
+   at System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc&amp; rpc)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData&amp; msgData, Int32 type)
+   at Zoologico.InstitucionesWS.IGestionarInstitucion.ListaInstitucion()
+   at Zoologico.InstitucionesWS.GestionarInstitucionClient.ListaInstitucion() in D:\workspaces\wkSpring\gitProyectoUPC\Proyecto\Zoologico\Service References\InstitucionesWS\Reference.cs:line 189
+   at Zoologico.UnitTest1.listar() in D:\workspaces\wkSpring\gitProyectoUPC\Proyecto\Zoologico\UnitTest1.cs:line 25
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

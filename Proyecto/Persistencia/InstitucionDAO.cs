@@ -4,24 +4,28 @@ using System.Linq;
 using System.Web;
 using Proyecto.Dominio;
 using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace Proyecto.Persistencia
 {
     public class InstitucionDAO 
 
     {
+        private MySqlConnection con;
 
         public Institucions ObtenerPorRuc(string ruc)
         {
             Institucions institucionencontrada = null;
             string sql = "SELECT * FROM institucion WHERE RUC=@ruc";
-            using (SqlConnection con = new SqlConnection(ConexionUtil.Cadena))
+            if (con == null)
+                con = new MySqlConnection(ConexionUtil.Cadena);
+            using (con)
             {
                 con.Open();
-                using (SqlCommand com = new SqlCommand(sql, con))
+                using (MySqlCommand com = new MySqlCommand(sql, con))
                 {
-                    com.Parameters.Add(new SqlParameter("@ruc", ruc));
-                    using (SqlDataReader resultado = com.ExecuteReader())
+                    com.Parameters.Add(new MySqlParameter("@ruc", ruc));
+                    using (MySqlDataReader resultado = com.ExecuteReader())
                     {
                         if (resultado.Read())
                         {
@@ -43,13 +47,15 @@ namespace Proyecto.Persistencia
         {
             Institucions institucionencontrada = null;
             string sql = "SELECT * FROM institucion WHERE Nombre=@razon";
-            using (SqlConnection con = new SqlConnection(ConexionUtil.Cadena))
+            if (con == null)
+                con = new MySqlConnection(ConexionUtil.Cadena);
+            using (con)
             {
                 con.Open();
-                using (SqlCommand com = new SqlCommand(sql, con))
+                using (MySqlCommand com = new MySqlCommand(sql, con))
                 {
-                    com.Parameters.Add(new SqlParameter("@razon", razonSocial));
-                    using (SqlDataReader resultado = com.ExecuteReader())
+                    com.Parameters.Add(new MySqlParameter("@razon", razonSocial));
+                    using (MySqlDataReader resultado = com.ExecuteReader())
                     {
                         if (resultado.Read())
                         {
@@ -71,12 +77,14 @@ namespace Proyecto.Persistencia
         {
             List<Institucions> pedidos = new List<Institucions>();
             string sql = "SELECT * FROM institucion";
-            using (SqlConnection con = new SqlConnection(ConexionUtil.Cadena))
+            if (con == null)
+                con = new MySqlConnection(ConexionUtil.Cadena);
+            using (con)
             {
                 con.Open();
-                using (SqlCommand com = new SqlCommand(sql, con))
+                using (MySqlCommand com = new MySqlCommand(sql, con))
                 {
-                    using (SqlDataReader resultado = com.ExecuteReader())
+                    using (MySqlDataReader resultado = com.ExecuteReader())
                     {
                         while (resultado.Read())
                         {

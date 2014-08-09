@@ -3,3 +3,8 @@ R:\UPC\Distribuidos\Proyecto\Proyecto\Zoologico\bin\Debug\Zoologico.dll
 R:\UPC\Distribuidos\Proyecto\Proyecto\Zoologico\bin\Debug\Zoologico.pdb
 R:\UPC\Distribuidos\Proyecto\Proyecto\Zoologico\obj\Debug\Zoologico.dll
 R:\UPC\Distribuidos\Proyecto\Proyecto\Zoologico\obj\Debug\Zoologico.pdb
+D:\workspaces\wkSpring\gitProyectoUPC\Proyecto\Zoologico\bin\Debug\Zoologico.dll.config
+D:\workspaces\wkSpring\gitProyectoUPC\Proyecto\Zoologico\bin\Debug\Zoologico.dll
+D:\workspaces\wkSpring\gitProyectoUPC\Proyecto\Zoologico\bin\Debug\Zoologico.pdb
+D:\workspaces\wkSpring\gitProyectoUPC\Proyecto\Zoologico\obj\Debug\Zoologico.dll
+D:\workspaces\wkSpring\gitProyectoUPC\Proyecto\Zoologico\obj\Debug\Zoologico.pdb

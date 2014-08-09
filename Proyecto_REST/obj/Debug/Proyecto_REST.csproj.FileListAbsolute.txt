@@ -2,3 +2,7 @@ R:\UPC\Distribuidos\Proyecto\Proyecto\Proyecto_REST\bin\Proyecto_REST.dll
 R:\UPC\Distribuidos\Proyecto\Proyecto\Proyecto_REST\bin\Proyecto_REST.pdb
 R:\UPC\Distribuidos\Proyecto\Proyecto\Proyecto_REST\obj\Debug\Proyecto_REST.dll
 R:\UPC\Distribuidos\Proyecto\Proyecto\Proyecto_REST\obj\Debug\Proyecto_REST.pdb
+D:\workspaces\wkSpring\gitProyectoUPC\Proyecto\Proyecto_REST\bin\Proyecto_REST.dll
+D:\workspaces\wkSpring\gitProyectoUPC\Proyecto\Proyecto_REST\bin\Proyecto_REST.pdb
+D:\workspaces\wkSpring\gitProyectoUPC\Proyecto\Proyecto_REST\obj\Debug\Proyecto_REST.dll
+D:\workspaces\wkSpring\gitProyectoUPC\Proyecto\Proyecto_REST\obj\Debug\Proyecto_REST.pdb

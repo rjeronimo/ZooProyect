@@ -5,3 +5,7 @@ R:\UPC\Distribuidos\Proyecto\Proyecto\Proyecto\bin\NHibernate.dll
 R:\UPC\Distribuidos\Proyecto\Proyecto\Proyecto\bin\SOAPServicesTest.dll
 R:\UPC\Distribuidos\Proyecto\Proyecto\Proyecto\obj\Debug\Proyecto.dll
 R:\UPC\Distribuidos\Proyecto\Proyecto\Proyecto\obj\Debug\Proyecto.pdb
+D:\workspaces\wkSpring\gitProyectoUPC\Proyecto\Proyecto\bin\Proyecto.dll
+D:\workspaces\wkSpring\gitProyectoUPC\Proyecto\Proyecto\bin\Proyecto.pdb
+D:\workspaces\wkSpring\gitProyectoUPC\Proyecto\Proyecto\obj\Debug\Proyecto.dll
+D:\workspaces\wkSpring\gitProyectoUPC\Proyecto\Proyecto\obj\Debug\Proyecto.pdb

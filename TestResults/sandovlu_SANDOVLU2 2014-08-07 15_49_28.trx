@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="878b97cd-3a76-4f21-9be7-8f15f0b9c326" name="sandovlu@SANDOVLU2 2014-08-07 15:49:28" runUser="AMERICAS\sandovlu" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0fda92f3-4914-4cb8-8df3-31deca771d1f">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="sandovlu_SANDOVLU2 2014-08-07 15_49_28" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-08-07T15:49:28.2491458-05:00" queuing="2014-08-07T15:49:28.2901499-05:00" start="2014-08-07T15:49:28.3021511-05:00" finish="2014-08-07T15:49:29.7772986-05:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ListarReserva" storage="d:\workspaces\wkspring\gitproyectoupc\proyecto\zoologico\bin\debug\zoologico.dll" id="0b853264-5142-3363-e6c0-9e1f4969e1c8">
+      <Execution id="cc3be5dc-f8e6-4cf8-8a44-44357ea339b1" />
+      <TestMethod codeBase="D:/workspaces/wkSpring/gitProyectoUPC/Proyecto/Zoologico/bin/Debug/Zoologico.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Zoologico.RESTUnitTests, Zoologico, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ListarReserva" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Resultados que no están en la lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0b853264-5142-3363-e6c0-9e1f4969e1c8" executionId="cc3be5dc-f8e6-4cf8-8a44-44357ea339b1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="cc3be5dc-f8e6-4cf8-8a44-44357ea339b1" testId="0b853264-5142-3363-e6c0-9e1f4969e1c8" testName="ListarReserva" computerName="SANDOVLU2" duration="00:00:01.1690157" startTime="2014-08-07T15:49:28.3061515-05:00" endTime="2014-08-07T15:49:29.7422951-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cc3be5dc-f8e6-4cf8-8a44-44357ea339b1">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;1&gt;. Actual:&lt;7&gt;. </Message>
+          <StackTrace>   at Zoologico.RESTUnitTests.ListarReserva() in D:\workspaces\wkSpring\gitProyectoUPC\Proyecto\Zoologico\RESTUnitTests.cs:line 66
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

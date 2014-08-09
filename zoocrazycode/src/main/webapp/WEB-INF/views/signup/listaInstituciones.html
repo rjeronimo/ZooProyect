@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:dt="http://github.com/dandelion/datatables">
+<head>
+<title>Lista de Intituciones</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="../../../resources/css/bootstrap.min.css" rel="stylesheet"
+	media="screen" th:href="@{/resources/css/bootstrap.min.css}" />
+<link href="../../../resources/css/core.css" rel="stylesheet"
+	media="screen" th:href="@{/resources/css/core.css}" />
+<script src="../../../resources/js/jquery-2.0.3.min.js"
+	th:src="@{/resources/js/jquery-2.0.3.min.js}"></script>
+<script src="../../../resources/js/bootstrap.min.js"
+	th:src="@{/resources/js/bootstrap.min.js}"></script>
+</head>
+<body>
+
+<th:block th:if="${message != null}">
+        <!-- /* The message code is returned from the @Controller */ -->
+        <div th:replace="fragments/alert :: alert (type=${#strings.toLowerCase(message.type)}, message=#{${message.message}(${#authentication.name})})">&nbsp;</div>
+    </th:block>
+
+	<form action="#" th:action="@{/institute/showInstitute}" method="get">
+
+		<table style="width: 100%;">
+			<tr>
+				<td>RUC</td>
+				<td><input id="ruc" type="text" name="ruc"/></td>
+				<td><span class="input-group-btn">
+						<button class="btn btn-default" type="submit">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+				</span></td>
+			</tr>
+			<tr>
+				<td>Nombre/Razon Social</td>
+				<td><input id="razonSocial" name="razonSocial" type="text"/></td>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+
+		<br />
+
+		<table class="table table-bordered table-striped table-hover" >
+			<thead>
+				<tr>
+					<th>Razon Social</th>
+					<th>Nombre Comercial</th>
+					<th>Seleccionar</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:unless="${!instituciones.isEmpty()}">
+					<td colspan="3"><p class="text-muted" th:text="#{noRecords}">No
+							records found</p></td>
+				</tr>
+
+				<tr th:each="item : ${instituciones}">
+					<td th:text="${item.getRUC().getValue()}">Giacomo</td>
+					<td th:text="${item.getNombre().getValue()}">Giacomo</td>
+					<td>
+						<span class="input-group-btn">
+							<a class="btn btn-default" href="#" 
+								th:href="|/zoocrazycode/institute/saveInstitute/${item.getRUC().getValue()}|">
+								<span class="glyphicon glyphicon-ok"></span>
+							</a>
+						</span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+	</form>
+
+</body>
+</html>

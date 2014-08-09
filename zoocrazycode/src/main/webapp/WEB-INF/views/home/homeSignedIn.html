@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head th:replace="fragments/header :: head">
+    <title th:text="#{view.index.title}">Zoológico!</title>	
+</head>
+<body>
+<header th:replace="fragments/header :: header">&nbsp;</header>
+<div class="container">
+
+	<div th:replace="fragments/menu :: menu"></div>
+	
+    <!-- /* Handle the flash message */-->
+    <th:block th:if="${message != null}">
+        <!-- /* The message code is returned from the @Controller */ -->
+        <div th:replace="fragments/alert :: alert (type=${#strings.toLowerCase(message.type)}, message=#{${message.message}(${#authentication.name})})">&nbsp;</div>
+    </th:block>
+    <p th:text="#{view.welcome}">
+        Welcome to the Spring MVC Quickstart application!
+    </p>
+</div>
+	<footer th:replace="fragments/footer :: footer"></footer>
+</body>
+</html>

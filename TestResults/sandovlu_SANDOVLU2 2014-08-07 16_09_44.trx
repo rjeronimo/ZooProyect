@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="b9c04cbe-9bf3-43d8-a0f4-4d33f40fa8b9" name="sandovlu@SANDOVLU2 2014-08-07 16:09:44" runUser="AMERICAS\sandovlu" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0fda92f3-4914-4cb8-8df3-31deca771d1f">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="sandovlu_SANDOVLU2 2014-08-07 16_09_44" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-08-07T16:09:44.1937281-05:00" queuing="2014-08-07T16:09:45.6858773-05:00" start="2014-08-07T16:09:45.8448932-05:00" finish="2014-08-07T16:10:12.9786063-05:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CrearReservaBien" storage="d:\workspaces\wkspring\gitproyectoupc\proyecto\zoologico\bin\debug\zoologico.dll" id="3296ac5d-402a-8a4b-0056-07049bf7ebb5">
+      <Execution id="3e979617-c345-4aa3-b382-983f907663a4" />
+      <TestMethod codeBase="D:/workspaces/wkSpring/gitProyectoUPC/Proyecto/Zoologico/bin/Debug/Zoologico.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Zoologico.RESTUnitTests, Zoologico, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CrearReservaBien" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Resultados que no están en la lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="3296ac5d-402a-8a4b-0056-07049bf7ebb5" executionId="3e979617-c345-4aa3-b382-983f907663a4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="3e979617-c345-4aa3-b382-983f907663a4" testId="3296ac5d-402a-8a4b-0056-07049bf7ebb5" testName="CrearReservaBien" computerName="SANDOVLU2" duration="00:00:24.8293239" startTime="2014-08-07T16:09:46.0059093-05:00" endTime="2014-08-07T16:10:12.9156000-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3e979617-c345-4aa3-b382-983f907663a4">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Zoologico.RESTUnitTests.CrearReservaBien threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>    at Zoologico.RESTUnitTests.CrearReservaBien() in D:\workspaces\wkSpring\gitProyectoUPC\Proyecto\Zoologico\RESTUnitTests.cs:line 41
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

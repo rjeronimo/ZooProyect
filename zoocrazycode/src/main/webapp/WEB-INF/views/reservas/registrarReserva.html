@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head th:include="fragments/header :: head">
+	<title th:text="#{view.index.title}"> / Registrar Reserva</title>
+</head>
+<body>
+
+	
+	
+	<header th:replace="fragments/header :: header">&nbsp;</header>
+	
+	<div class="container" th:fragment="content">
+
+		<div th:replace="fragments/menu :: menu"></div>
+		
+		<div class="col-sm-9 col-md-9" role="main">
+			<div class="container-fluid">
+				<div class="page-header">
+					<h2>Registrar Reserva</h2>
+				</div>
+
+				<div class="row">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Registrar Reserva</h3>
+						</div>
+						<div class="panel-body">
+
+							<form class="form-horizontal" method="post" action="#" th:action="@{/reserve/save}" th:object="${reserveForm}">
+							<th:block th:if="${#fields.hasErrors('${reserveForm.*}')}">
+						        <div th:replace="fragments/alert :: alert (type='danger', message='Form contains errors. Please try again.')">Alert</div>
+						    </th:block>
+						    <th:block th:if="${message != null}">
+						        <!-- /* The message code is returned from the @Controller */ -->
+						        <div th:replace="fragments/alert :: alert (type=${#strings.toLowerCase(message.type)}, message=#{${message.message}(${#authentication.name})})">&nbsp;</div>
+						        
+						        <script>
+							        $(function() {
+									    $('#messageSusses').show();
+									  });
+						        </script>
+						        
+						    </th:block>
+						    
+						    <input type="hidden" id="codigoInstitucion" th:field="*{codigoInstitucion}" /> 
+								<fieldset>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="txtNombre" class="col-lg-3 control-label">Institucion</label>
+											<div class="col-lg-9">
+												<input type="text" class="form-control" id="txtNombre" th:field="*{txtInstitucion}"/>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="cboEstado" class="col-lg-3 control-label">Turno</label>
+											<div class="col-lg-9">
+												<select id="cboEstado" class="form-control" th:field="*{turno}">
+													<option value="Full">Full Day</option>
+													<option value="Maniana">Manana</option>
+													<option value="Tarde">Tarde</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<label for="txtCantidad" class="col-lg-3 control-label">Asistentes</label>
+											<div class="col-lg-9">
+												<input type="text" class="form-control" id="txtCantidad" th:field="*{asistentes}" />
+											</div>
+										</div>
+									</div>
+
+
+									<div class="col-md-6">
+
+										<div class="form-group">
+											<label for="txtRepresentante" class="col-lg-3 control-label">Representante</label>
+											<div class="col-lg-9">
+												<input type="text" class="form-control" th:field="*{txtRepresentante}"
+													id="txtRepresentante"/>
+											</div>
+										</div>
+
+
+										<div class="form-group" >
+											<label for="txtFecIni" class="col-lg-3 control-label">Fecha Inicio</label>
+											<div class="col-lg-9">
+												<div class="input-group" id="startDate">
+													<input type="date" name="" id="txtFecIni" th:field="*{fechaReserva}"
+														class="form-control" value="" required="required" title=""/>
+													<span class="input-group-btn">
+														<button class="btn btn-default" type="button">
+															<span class="glyphicon glyphicon-calendar"></span>
+														</button>
+													</span>
+												</div>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<label for="cboEstado" class="col-lg-3 control-label">Preferencias</label>
+											<div class="col-lg-9">
+												<select id="cboEstado" class="form-control" th:field="*{preferencia}">
+													<option value="todos">Todos</option>
+													<option value="felinario">Felinario</option>
+													<option value="mamiferos">Mamiferos</option>
+												</select>
+											</div>
+										</div>
+
+									</div>
+								</fieldset>
+							<div align="center">
+								<div class="btn-group">
+									<button type="submit" class="btn btn-primary">Crear</button>
+									<button type="button" class="btn btn-info">Cancelar</button>
+								</div>
+							</div>
+							</form>
+
+
+
+						</div>
+					</div>
+
+
+					<div class="modal fade" id="messageSusses" tabindex="-1"
+						role="dialog" aria-labelledby="messageSusses" aria-hidden="false">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">
+										<span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span>
+									</button>
+									<h4 class="modal-title" id="myModalLabel">Regsitro Exitoso</h4>
+								</div>
+								<div class="modal-body">
+									<span th:replace="fragments/alert :: alert (type='danger', message='Form contains errors. Please try again.')">
+									</span>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary"
+										data-dismiss="modal">Cerrar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<script type="text/javascript">
+		//$.fn.datepicker.defaults.format = "dd/mm/yyyy";
+		  /* $(function() {
+		    $('#startDate').datepicker();
+		  }); */
+	</script>
+	
+	<footer th:replace="fragments/footer :: footer"></footer>
+</body>
+</html>

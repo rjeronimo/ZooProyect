@@ -10,7 +10,7 @@ namespace Zoologico
         public int CodigoReserva { get; set; }
         public int CodigoUsuario { get; set; }
         public int Asistentes { get; set; }
-        public DateTime Fecha_reserva { get; set; }
+        public string Fecha_reserva { get; set; }
         public string Turno { get; set; }
         public string Preferencias { get; set; }
     }

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="510631f1-faaf-497a-b646-78e2467178ed" name="sandovlu@SANDOVLU2 2014-08-08 11:06:02" runUser="AMERICAS\sandovlu" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0fda92f3-4914-4cb8-8df3-31deca771d1f">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="sandovlu_SANDOVLU2 2014-08-08 11_06_02" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-08-08T11:06:02.9738484-05:00" queuing="2014-08-08T11:06:03.0928603-05:00" start="2014-08-08T11:06:03.1088619-05:00" finish="2014-08-08T11:06:05.8521362-05:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="listar" storage="d:\workspaces\wkspring\gitproyectoupc\proyecto\zoologico\bin\debug\zoologico.dll" id="252f3117-e5ee-8cfb-463f-697079c9fd33">
+      <Execution id="d2b2c05d-d630-4c45-ba83-504bc417a6bf" />
+      <TestMethod codeBase="D:/workspaces/wkSpring/gitProyectoUPC/Proyecto/Zoologico/bin/Debug/Zoologico.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Zoologico.UnitTest1, Zoologico, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="listar" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Resultados que no están en la lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="252f3117-e5ee-8cfb-463f-697079c9fd33" executionId="d2b2c05d-d630-4c45-ba83-504bc417a6bf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="d2b2c05d-d630-4c45-ba83-504bc417a6bf" testId="252f3117-e5ee-8cfb-463f-697079c9fd33" testName="listar" computerName="SANDOVLU2" duration="00:00:02.2951261" startTime="2014-08-08T11:06:03.1108621-05:00" endTime="2014-08-08T11:06:05.7561266-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d2b2c05d-d630-4c45-ba83-504bc417a6bf">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;3&gt;. Actual:&lt;1&gt;. </Message>
+          <StackTrace>   at Zoologico.UnitTest1.listar() in D:\workspaces\wkSpring\gitProyectoUPC\Proyecto\Zoologico\UnitTest1.cs:line 30
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

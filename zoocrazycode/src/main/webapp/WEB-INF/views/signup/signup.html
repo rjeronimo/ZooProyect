@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Registrar Usuario</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="../../../resources/css/bootstrap.min.css" rel="stylesheet" media="screen" th:href="@{/resources/css/bootstrap.min.css}"/>
+    <link href="../../../resources/css/core.css" rel="stylesheet" media="screen" th:href="@{/resources/css/core.css}" />
+    <script src="../../../resources/js/jquery-2.0.3.min.js" th:src="@{/resources/js/jquery-2.0.3.min.js}"></script>
+    <script src="../../../resources/js/bootstrap.min.js" th:src="@{/resources/js/bootstrap.min.js}"></script>
+</head>
+<body>
+<form class="form-narrow signup form-horizontal" method="post" th:action="@{/signup}" th:object="${signupForm}">
+    <!-- /* Show general error message when form contains errors */ -->
+    <th:block th:if="${#fields.hasErrors('${signupForm.*}')}">
+        <div th:replace="fragments/alert :: alert (type='danger', message='Form contains errors. Please try again.')">Alert</div>
+    </th:block>
+    <th:block th:if="${message != null}">
+        <!-- /* The message code is returned from the @Controller */ -->
+        <div th:replace="fragments/alert :: alert (type=${#strings.toLowerCase(message.type)}, message=#{${message.message}(${#authentication.name})})">&nbsp;</div>
+    </th:block>
+    <fieldset>
+        <legend>Datos Principales</legend>
+        
+        <div class="col-md-6">        	
+        	<input type="hidden" id="idInstitucion" th:field="*{idInstitucion}" /> 
+        	<div class="form-group" th:classappend="${#fields.hasErrors('txtInstitucion')}? 'has-error'">
+				<label for="txtInstitucion" class="col-lg-3 control-label">Institución</label>
+				<div class="col-lg-9">
+					<div class="input-group">
+				      <input type="text" class="form-control" id="txtInstitucion" th:field="*{txtInstitucion}" readonly="readonly"/>
+				      <span class="input-group-btn">
+				        <a href="/institute/viewInstitute" th:href="@{/institute/viewInstitute}" class="btn btn-default">
+							<span class="glyphicon glyphicon-search"></span>
+				        </a>
+				      </span>
+				    </div>
+			    </div>
+			</div>
+			<div class="form-group" th:classappend="${#fields.hasErrors('nombre')}? 'has-error'">
+				<label for="nombre" class="col-lg-3 control-label">Nombres</label>
+				<div class="col-lg-9">
+					<input type="text" class="form-control" id="nombre" th:field="*{nombre}"/>
+					<span class="help-block" th:if="${#fields.hasErrors('nombre')}" th:errors="*{nombre}">nombre incorrecto</span>
+				</div>										
+			</div>
+			<div class="form-group" th:classappend="${#fields.hasErrors('telefono')}? 'has-error'">
+				<label for="telefono" class="col-lg-3 control-label">Telefono</label>
+				<div class="col-lg-9">
+					<input type="text" name="" id="telefono" class="form-control" value="" th:field="*{telefono}"/>
+					<span class="help-block" th:if="${#fields.hasErrors('email')}" th:errors="telefono">telefono incorrecto</span>
+				</div>										
+			</div>
+			
+	        <div class="form-group" th:classappend="${#fields.hasErrors('email')}? 'has-error'">
+	            <label for="email" class="col-lg-3 control-label">Email</label>
+	            <div class="col-lg-9">
+	                <input type="text" class="form-control" id="email" placeholder="Email address" th:field="*{email}" />
+	                <span class="help-block" th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Mail incorrecto</span>
+	            </div>
+	        </div>
+        	
+        </div>
+        
+        
+		<div class="col-md-6">
+			<div class="form-group" th:classappend="${#fields.hasErrors('username')}? 'has-error'">
+				<label for="username" class="col-lg-3 control-label">Username</label>
+				<div class="col-lg-9">
+					<input type="text" class="form-control" id="username" th:field="*{username}"/>
+					<span class="help-block" th:if="${#fields.hasErrors('password')}" th:errors="*{username}">username incorrecta</span>
+				</div>										
+			</div>
+			
+			<div class="form-group" th:classappend="${#fields.hasErrors('apellidos')}? 'has-error'">
+				<label for="apellidos" class="col-lg-3 control-label">Apellidos</label>
+				<div class="col-lg-9">
+					<input type="text" class="form-control" id="apellidos" th:field="*{apellidos}"/>
+					<span class="help-block" th:if="${#fields.hasErrors('apellidos')}" th:errors="*{apellidos}">apellidos incorrecta</span>
+				</div>										
+			</div>
+			
+			<div class="form-group" th:classappend="${#fields.hasErrors('dni')}? 'has-error'">
+				<label for="dni" class="col-lg-3 control-label">DNI</label>
+				<div class="col-lg-9">
+					<input type="text" id="dni" class="form-control" th:field="*{dni}"/>
+					<span class="help-block" th:if="${#fields.hasErrors('dni')}" th:errors="*{dni}">Clave incorrecta</span>
+				</div>								
+			</div>
+												
+	        <div class="form-group" th:classappend="${#fields.hasErrors('password')}? 'has-error'">
+	            <label for="password" class="col-lg-3 control-label">Clave</label>
+	            <div class="col-lg-9">
+	                <input type="password" class="form-control" id="password" placeholder="Password" th:field="*{password}"/>
+	                <span class="help-block" th:if="${#fields.hasErrors('password')}" th:errors="*{password}">Clave incorrecta</span>
+	            </div>
+	        </div>
+		</div>
+		<div align="center">
+			<div class="btn-group">
+				<button type="submit" class="btn btn-primary">Crear</button>
+				<a href="login.html" class="btn btn-default" rol="button">Cancelar</a>
+			</div>
+			<div class="form-group">
+	            <div class="col-lg-offset-2 col-lg-10">
+	                <p>¿Actualmente tienes cuenta? <a href="signin" th:href="@{/signin}">Ingresar</a></p>
+	            </div>
+	        </div>
+		</div>
+        <!-- <div class="form-group">
+            <div class="col-lg-offset-2 col-lg-10">
+                <button type="submit" class="btn btn-default">Registrar</button>
+            </div>
+        </div> -->
+        
+    </fieldset>
+</form>
+
+</body>
+</html>
