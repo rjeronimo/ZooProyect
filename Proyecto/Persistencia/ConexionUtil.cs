@@ -11,7 +11,8 @@ namespace Proyecto.Persistencia
         {
             get
             {
-                return "Data Source=(local);Initial Catalog=instituciones;Integrated Security=SSPI;";
+                //return "Data Source=(local);Initial Catalog=instituciones;Integrated Security=true;";
+                return "server=localhost;user id=root;password=root;persistsecurityinfo=True;database=instituciones";
             }
         }
     }

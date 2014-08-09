@@ -1,1 +1,1 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="Proyecto.GestionarSede" CodeBehind="GestionarInstitucion.svc.cs" %>
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Proyecto.GestionarInstitucion" CodeBehind="GestionarInstitucion.svc.cs" %>

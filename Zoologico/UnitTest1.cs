@@ -18,7 +18,7 @@ namespace Zoologico
         public void listar()
         {
             // 1. Instanciar el objeto a ser probado
-            InstitucionesWS.GestionarSedeClient proxy = new InstitucionesWS.GestionarSedeClient();
+            InstitucionesWS.GestionarInstitucionClient proxy = new InstitucionesWS.GestionarInstitucionClient();
             // 2. Invocar el método con los argumentos de prueba
 
             IList<InstitucionesWS.Institucions> institucions;
@@ -27,14 +27,17 @@ namespace Zoologico
             int total = institucions.Count;
 
             // 3. Realizar la validación de los criterios de prueba
-            Assert.AreEqual(3, total);
+            Assert.AreEqual(2,total);
+
+
+
         }
 
         [TestMethod]
         public void obtenerInstitucionRUC()
         {
             // 1. Instanciar el objeto a ser probado
-            InstitucionesWS.GestionarSedeClient proxy = new InstitucionesWS.GestionarSedeClient();
+            InstitucionesWS.GestionarInstitucionClient proxy = new InstitucionesWS.GestionarInstitucionClient();
             // 2. Invocar el método con los argumentos de prueba
 
             InstitucionesWS.Institucions institucion;
@@ -45,20 +48,20 @@ namespace Zoologico
             Assert.AreEqual("LOS PODEROSOS", institucion.Nombre);
         }
 
-        //[TestMethod]
-        //public void obtenerInstitucionRazon()
-        //{
-        //    // 1. Instanciar el objeto a ser probado
-        //    InstitucionesWS.GestionarSedeClient proxy = new InstitucionesWS.GestionarSedeClient();
-        //    // 2. Invocar el método con los argumentos de prueba
+        [TestMethod]
+        public void obtenerInstitucionRazon()
+        {
+            // 1. Instanciar el objeto a ser probado
+            InstitucionesWS.GestionarInstitucionClient proxy = new InstitucionesWS.GestionarInstitucionClient();
+            // 2. Invocar el método con los argumentos de prueba
 
-        //    InstitucionesWS.Institucions institucion;
+            InstitucionesWS.Institucions institucion;
 
-        //    institucion = proxy.ObtenerInstitucionRazon("CON FE Y APRENDES");
+            institucion = proxy.ObtenerInstitucionRazon("LOS PODEROSOS");
 
-        //    // 3. Realizar la validación de los criterios de prueba
-        //    Assert.AreEqual("CON FE Y APRENDES", institucion.Nombre);
-        //}
+            // 3. Realizar la validación de los criterios de prueba
+            Assert.AreEqual("LOS PODEROSOS", institucion.Nombre);
+        }
 
    
        
